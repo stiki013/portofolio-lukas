@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lukas William Djendrawan — Portfolio</title>
+  <meta name="description" content="Portfolio of Lukas William Djendrawan — Web Developer / System Analyst." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="font-extrabold tracking-tight text-lg">LUKAS<span class="text-indigo-600">.DEV</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#skills" class="hover:text-indigo-600">Skills</a>
+          <a href="#certs" class="hover:text-indigo-600">Certifications</a>
+          <a href="#education" class="hover:text-indigo-600">Education</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="./assets/CV_LukasWilliam_2025.pdf" class="btn btn-primary" download>Download CV</a>
+          <button id="themeToggle" class="btn" title="Toggle theme">🌓</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="py-16 sm:py-24 bg-gradient-to-b from-indigo-50 to-transparent">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+            Lukas William Djendrawan
+          </h1>
+          <p class="mt-4 text-lg text-slate-700">
+            Web Developer • System Analyst • Data Enthusiast
+          </p>
+          <p class="mt-6 text-slate-600">
+            I’m passionate about shipping pragmatic web solutions and data-informed products. Strong in Laravel, modern frontend, and collaborative delivery.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="mailto:lukas.djen@gmail.com" class="btn btn-primary">Email</a>
+            <a href="https://www.linkedin.com/in/william-djendrawan-007b02313/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/stiki013" class="btn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://letshelp2gether.com/" class="btn" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+          <p class="mt-3 text-sm text-slate-500">Malang, East Java • Open to internship opportunities</p>
+        </div>
+        <div class="relative">
+          <div class="hero-card">
+            <div class="p-6">
+              <p class="text-sm uppercase tracking-widest text-indigo-600 font-semibold">Snapshot</p>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li>• Laravel + Tailwind delivery-ready stack</li>
+                <li>• API-first mindset with clean data models</li>
+                <li>• Agile teamwork: GitHub Projects, Scrum</li>
+                <li>• Performance focus: SQL and frontend optimizations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="mt-4 text-slate-700">
+          I have hands-on experience in full‑stack web development and systems analysis, with a strong interest in data analysis.
+          I enjoy working in collaborative teams to deliver technology that brings real value to both public and private sectors.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <h2 class="section-title">Projects</h2>
+          <div class="flex items-center gap-2">
+            <input id="search" class="input" placeholder="Search projects…" />
+            <select id="filter" class="input">
+              <option value="">All</option>
+              <option value="Laravel">Laravel</option>
+              <option value="Frontend">Frontend</option>
+              <option value="System Analyst">System Analyst</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="projectGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section bg-slate-50 dark:bg-slate-900/40">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card">
+            <h3 class="card-title">Web & Programming</h3>
+            <p class="text-slate-600 dark:text-slate-400 mt-2">PHP, Laravel, HTML, CSS, JavaScript, Node.js, Flutter</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Database</h3>
+            <p class="text-slate-600 dark:text-slate-400 mt-2">MySQL, PostgreSQL</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Tools</h3>
+            <p class="text-slate-600 dark:text-slate-400 mt-2">Git, VS Code, Figma, Miro, Notion, Trello, Power BI, Google Workspace</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section">
+      <div class="container">
+        <h2 class="section-title">Certifications & Awards</h2>
+        <ul class="mt-4 grid md:grid-cols-2 gap-4 text-slate-700">
+          <li class="cert-item">Full Stack Web Development — Udemy (Jul 2023)</li>
+          <li class="cert-item">Project Management Skills — STIKI (Oct 2023)</li>
+          <li class="cert-item">Automation Frontend Workflow using GulpJs — STIKI (Nov 2023)</li>
+          <li class="cert-item">AI Jumpstart Programme — British Embassy Jakarta (Sep 2024)</li>
+          <li class="cert-item">Managing Diversity in Project — STIKI (Oct 2024)</li>
+          <li class="cert-item">PMI Project Management Challenge — Top 10 Finalist (Jun 2025)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section bg-slate-50 dark:bg-slate-900/40">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="card mt-4">
+          <h3 class="card-title">Bhinneka Nusantara University — B.Sc. Information Systems</h3>
+          <p class="text-slate-600 dark:text-slate-400 mt-2">Aug 2023 – Present • GPA 3.75</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="mt-4 grid sm:grid-cols-2 gap-6">
+          <div class="card">
+            <h3 class="card-title">Let's collaborate</h3>
+            <p class="text-slate-600 dark:text-slate-400 mt-2">I'm open to internship roles in web development or systems analysis.</p>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <a href="mailto:lukas.djen@gmail.com" class="btn btn-primary">Email me</a>
+              <a href="https://www.linkedin.com/in/william-djendrawan-007b02313/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/stiki013" class="btn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <form id="contactForm" class="card">
+            <h3 class="card-title">Quick message</h3>
+            <div class="mt-3 grid gap-3">
+              <input class="input" type="text" name="name" placeholder="Name" required />
+              <input class="input" type="email" name="email" placeholder="Email" required />
+              <textarea class="input" name="message" placeholder="Your message…" rows="4" required></textarea>
+            </div>
+            <button class="btn btn-primary mt-4" type="submit">Send</button>
+            <p id="formStatus" class="mt-2 text-sm text-slate-500 hidden">Thanks! Your message has been prepared in your email client.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p>© <span id="year"></span> Lukas William Djendrawan</p>
+      <div class="flex items-center gap-4">
+        <a href="https://letshelp2gether.com/" target="_blank" rel="noopener">Let's Help 2Gether</a>
+        <a href="https://cms-maspion.dbi-project.my.id" target="_blank" rel="noopener">Maspion CMS</a>
+        <a href="https://cms.dbi-project.my.id/" target="_blank" rel="noopener">DBI CMS</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
