@@ -1,193 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lukas William Djendrawan — Portfolio</title>
-  <meta name="description" content="Portfolio of Lukas William Djendrawan — Web Developer / System Analyst." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body class="bg-slate-50 text-slate-900 antialiased">
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-16">
-        <a href="#" class="font-extrabold tracking-tight text-lg">LUKAS<span class="text-indigo-600">.DEV</span></a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#about" class="hover:text-indigo-600">About</a>
-          <a href="#projects" class="hover:text-indigo-600">Projects</a>
-          <a href="#skills" class="hover:text-indigo-600">Skills</a>
-          <a href="#certs" class="hover:text-indigo-600">Certifications</a>
-          <a href="#education" class="hover:text-indigo-600">Education</a>
-          <a href="#contact" class="hover:text-indigo-600">Contact</a>
-        </nav>
-        <div class="flex items-center gap-3">
-          <a href="./assets/CV_LukasWilliam_2025.pdf" class="btn btn-primary" download>Download CV</a>
-          <button id="themeToggle" class="btn" title="Toggle theme">🌓</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lukas William Djendrawan — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Lukas William Djendrawan — Web Developer & Systems Analyst."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="antialiased">
+    <header class="sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="#" class="font-extrabold tracking-tight text-lg"
+            >LUKAS<span class="text-indigo-600">.PORTO</span></a
+          >
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#about" class="hover:text-indigo-600">About</a>
+            <a href="#projects" class="hover:text-indigo-600">Projects</a>
+            <a href="#skills" class="hover:text-indigo-600">Skills</a>
+            <a href="#certs" class="hover:text-indigo-600">Certifications</a>
+            <a href="#education" class="hover:text-indigo-600">Education</a>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-3"></div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="py-16 sm:py-24 bg-gradient-to-b from-indigo-50 to-transparent">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
-            Lukas William Djendrawan
-          </h1>
-          <p class="mt-4 text-lg text-slate-700">
-            Web Developer • System Analyst • Data Enthusiast
+    <main>
+      <!-- Hero -->
+      <section
+        class="py-16 sm:py-28 bg-gradient-to-b from-indigo-50 to-transparent hero-section"
+      >
+        <div
+          class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center"
+        >
+          <div class="hero-content">
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+              Lukas William — Crafting thoughtful web experiences
+            </h1>
+            <p class="mt-4 text-lg text-slate-700">
+              I create clean, maintainable web applications and delightful user
+              interfaces with a strong focus on reliability and performance. I
+              blend backend pragmatism with frontend polish to deliver solutions
+              that teams can iterate on confidently.
+            </p>
+
+            <p class="mt-6 text-slate-600">
+              Available for internships • Interested in product-focused teams,
+              backend systems, and UX-driven improvements.
+            </p>
+
+            <p class="mt-3 text-sm text-slate-500">Malang, East Java</p>
+          </div>
+
+          <div class="hero-figure">
+            <div class="figure-frame card">
+              <img
+                src="./assets/profile%20photo.png"
+                alt="Lukas William — profile photo"
+                class="profile-photo dominant mx-auto md:mx-0"
+              />
+              <div class="mt-4 text-center md:text-left">
+                <div class="font-semibold">Lukas William Djendrawan</div>
+                <div class="text-sm text-slate-500">
+                  Web Developer • Systems Analyst
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p
+            class="mt-4"
+            style="color: var(--muted); font-size: 1.0625rem; line-height: 1.6"
+          >
+            I build dependable, production-ready web systems with a
+            product-first mindset. I turn fuzzy problems into clear technical
+            plans: defining data models, APIs, and UX flows that reduce
+            developer friction and improve user outcomes. I pair pragmatic
+            engineering with thoughtful UX — shipping incremental improvements
+            that stakeholders can measure and iterate on.
           </p>
-          <p class="mt-6 text-slate-600">
-            I’m passionate about shipping pragmatic web solutions and data-informed products. Strong in Laravel, modern frontend, and collaborative delivery.
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="flex items-center gap-2">
+              <input
+                id="search"
+                class="input"
+                placeholder="Search projects…"
+                aria-label="Search projects"
+              />
+              <select id="filter" class="input" aria-label="Filter by tag">
+                <option value="">All</option>
+                <option value="Backend">Backend</option>
+                <option value="Frontend">Frontend</option>
+                <option value="System Analyst">System Analyst</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="mt-4 text-slate-600">
+            Projects that highlight impact — improving performance, reliability,
+            or user experience. Click any card to explore the live demos or read
+            concise outcomes.
           </p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="mailto:lukas.djen@gmail.com" class="btn btn-primary">Email</a>
-            <a href="https://www.linkedin.com/in/william-djendrawan-007b02313/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/stiki013" class="btn" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://letshelp2gether.com/" class="btn" target="_blank" rel="noopener">Live Demo</a>
-          </div>
-          <p class="mt-3 text-sm text-slate-500">Malang, East Java • Open to internship opportunities</p>
+
+          <div
+            id="projectGrid"
+            class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          ></div>
         </div>
-        <div class="relative">
-          <div class="hero-card">
-            <div class="p-6">
-              <p class="text-sm uppercase tracking-widest text-indigo-600 font-semibold">Snapshot</p>
-              <ul class="mt-3 space-y-2 text-sm">
-                <li>• Laravel + Tailwind delivery-ready stack</li>
-                <li>• API-first mindset with clean data models</li>
-                <li>• Agile teamwork: GitHub Projects, Scrum</li>
-                <li>• Performance focus: SQL and frontend optimizations</li>
-              </ul>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Skills & Tools</h2>
+          <p class="mt-2">Technologies I use daily and tools I trust.</p>
+          <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card">
+              <h3 class="card-title">Logos</h3>
+              <div class="mt-3 logo-slider">
+                <div class="logo-track" aria-hidden="false">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                    alt="PHP"
+                    class="skill-logo"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"
+                    alt="Laravel"
+                    class="skill-logo"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    class="skill-logo"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                    class="skill-logo"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                    class="skill-logo"
+                  />
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js"
+                    class="skill-logo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Database & Data</h3>
+              <div class="mt-3 flex items-center gap-4 flex-wrap">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  class="skill-logo"
+                />
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Tools & Collaboration</h3>
+              <div class="mt-3 flex items-center gap-4 flex-wrap">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                  alt="VS Code"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+                  alt="Trello"
+                  class="skill-logo"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg"
+                  alt="Notion"
+                  class="skill-logo"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="mt-4 text-slate-700">
-          I have hands-on experience in full‑stack web development and systems analysis, with a strong interest in data analysis.
-          I enjoy working in collaborative teams to deliver technology that brings real value to both public and private sectors.
-        </p>
-      </div>
-    </section>
+      <!-- Certifications -->
+      <section id="certs" class="section">
+        <div class="container">
+          <h2 class="section-title">Certifications & Awards</h2>
+          <p class="mt-2 text-slate-600">
+            Selected certifications that support my skills and project work.
+          </p>
+          <ul class="mt-4 grid md:grid-cols-2 gap-4">
+            <li
+              class="cert-item flex items-center justify-between gap-3 rounded-lg p-4"
+            >
+              <div>
+                <div class="font-semibold">
+                  Full Stack Web Development — Udemy (Jul 2023)
+                </div>
+                <div class="text-sm" style="color: var(--muted)">
+                  Practical coursework covering modern web stacks and
+                  deployment.
+                </div>
+              </div>
+              <a
+                class="btn btn-sm"
+                target="_blank"
+                rel="noopener"
+                href="./assets/Full%20Stack%20Web%20Development%20%E2%80%93%20Udemy%20%20July%202023.pdf"
+                >View Certificate</a
+              >
+            </li>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="flex items-center justify-between">
-          <h2 class="section-title">Projects</h2>
-          <div class="flex items-center gap-2">
-            <input id="search" class="input" placeholder="Search projects…" />
-            <select id="filter" class="input">
-              <option value="">All</option>
-              <option value="Laravel">Laravel</option>
-              <option value="Frontend">Frontend</option>
-              <option value="System Analyst">System Analyst</option>
-            </select>
+            <li
+              class="cert-item flex items-center justify-between gap-3 rounded-lg p-4"
+            >
+              <div>
+                <div class="font-semibold">
+                  Project Management Skills — STIKI (Oct 2023)
+                </div>
+                <div class="text-sm" style="color: var(--muted)">
+                  Foundational practices for planning and delivering projects.
+                </div>
+              </div>
+              <a
+                class="btn btn-sm"
+                target="_blank"
+                rel="noopener"
+                href="./assets/Project%20Management%20Skills%20%E2%80%93%20STIKI%20%20October%202023.pdf"
+                >View Certificate</a
+              >
+            </li>
+
+            <li
+              class="cert-item flex items-center justify-between gap-3 rounded-lg p-4"
+            >
+              <div>
+                <div class="font-semibold">
+                  Automation Frontend Workflow using GulpJs — STIKI (Nov 2023)
+                </div>
+                <div class="text-sm" style="color: var(--muted)">
+                  Build tooling and automation for repeatable frontend
+                  workflows.
+                </div>
+              </div>
+              <a
+                class="btn btn-sm"
+                target="_blank"
+                rel="noopener"
+                href="./assets/Automation%20Frontend%20Workflow%20using%20GulpJs%20%E2%80%93%20STIKI%20%20November%202023.pdf"
+                >View Certificate</a
+              >
+            </li>
+
+            <li
+              class="cert-item flex items-center justify-between gap-3 rounded-lg p-4"
+            >
+              <div>
+                <div class="font-semibold">
+                  AI Jumpstart Programme — British Embassy Jakarta (Sep 2024)
+                </div>
+                <div class="text-sm" style="color: var(--muted)">
+                  Introductory AI program focusing on practical applications and
+                  ethics.
+                </div>
+              </div>
+              <a
+                class="btn btn-sm"
+                target="_blank"
+                rel="noopener"
+                href="./assets/AI%20Jumpstart%20Programme%20%E2%80%93%20British%20Embassy%20Jakarta%20%20September%202024.pdf"
+                >View Certificate</a
+              >
+            </li>
+
+            <li
+              class="cert-item flex items-center justify-between gap-3 rounded-lg p-4"
+            >
+              <div>
+                <div class="font-semibold">
+                  Managing Diversity in Project — STIKI (Oct 2024)
+                </div>
+                <div class="text-sm" style="color: var(--muted)">
+                  Practical guidance on inclusive project collaboration.
+                </div>
+              </div>
+              <a
+                class="btn btn-sm"
+                target="_blank"
+                rel="noopener"
+                href="./assets/Managing%20Diversity%20in%20Project%20%E2%80%93%20STIKI%20%20October%202024.pdf"
+                >View Certificate</a
+              >
+            </li>
+
+            <li
+              class="cert-item flex items-center justify-between gap-3 rounded-lg p-4"
+            >
+              <div>
+                <div class="font-semibold">
+                  PMI Project Management Challenge — Top 10 Finalist (Jun 2025)
+                </div>
+                <div class="text-sm" style="color: var(--muted)">
+                  Recognized among top teams for project solutions and
+                  execution.
+                </div>
+              </div>
+              <a
+                class="btn btn-sm"
+                target="_blank"
+                rel="noopener"
+                href="./assets/Project%20Management%20Challenge%20Finalist%20Top%2010%20-%20PMI%20Indonesia%20%20June%202025.pdf"
+                >View Certificate</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section bg-slate-50 dark:bg-slate-900/40">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="card mt-4">
+            <h3 class="card-title">
+              Bhinneka Nusantara University — B.Sc. Information Systems
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 mt-2">
+              Aug 2023 – Present • GPA 3.75
+            </p>
           </div>
         </div>
+      </section>
 
-        <div id="projectGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section bg-slate-50 dark:bg-slate-900/40">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="card">
-            <h3 class="card-title">Web & Programming</h3>
-            <p class="text-slate-600 dark:text-slate-400 mt-2">PHP, Laravel, HTML, CSS, JavaScript, Node.js, Flutter</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Database</h3>
-            <p class="text-slate-600 dark:text-slate-400 mt-2">MySQL, PostgreSQL</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Tools</h3>
-            <p class="text-slate-600 dark:text-slate-400 mt-2">Git, VS Code, Figma, Miro, Notion, Trello, Power BI, Google Workspace</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certs" class="section">
-      <div class="container">
-        <h2 class="section-title">Certifications & Awards</h2>
-        <ul class="mt-4 grid md:grid-cols-2 gap-4 text-slate-700">
-          <li class="cert-item">Full Stack Web Development — Udemy (Jul 2023)</li>
-          <li class="cert-item">Project Management Skills — STIKI (Oct 2023)</li>
-          <li class="cert-item">Automation Frontend Workflow using GulpJs — STIKI (Nov 2023)</li>
-          <li class="cert-item">AI Jumpstart Programme — British Embassy Jakarta (Sep 2024)</li>
-          <li class="cert-item">Managing Diversity in Project — STIKI (Oct 2024)</li>
-          <li class="cert-item">PMI Project Management Challenge — Top 10 Finalist (Jun 2025)</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section bg-slate-50 dark:bg-slate-900/40">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="card mt-4">
-          <h3 class="card-title">Bhinneka Nusantara University — B.Sc. Information Systems</h3>
-          <p class="text-slate-600 dark:text-slate-400 mt-2">Aug 2023 – Present • GPA 3.75</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="mt-4 grid sm:grid-cols-2 gap-6">
-          <div class="card">
-            <h3 class="card-title">Let's collaborate</h3>
-            <p class="text-slate-600 dark:text-slate-400 mt-2">I'm open to internship roles in web development or systems analysis.</p>
-            <div class="mt-4 flex flex-wrap gap-3">
-              <a href="mailto:lukas.djen@gmail.com" class="btn btn-primary">Email me</a>
-              <a href="https://www.linkedin.com/in/william-djendrawan-007b02313/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-              <a href="https://github.com/stiki013" class="btn" target="_blank" rel="noopener">GitHub</a>
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="mt-4 grid gap-6">
+            <div class="card">
+              <h3 class="card-title">Let's collaborate</h3>
+              <p class="text-slate-600 dark:text-slate-400 mt-2">
+                I'm open to internship roles in web development or systems
+                analysis.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-3">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=lukas.djen@gmail.com"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener"
+                  >Email me</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/william-djendrawan-007b02313/"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+                <a
+                  href="https://github.com/stiki013"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
-          <form id="contactForm" class="card">
-            <h3 class="card-title">Quick message</h3>
-            <div class="mt-3 grid gap-3">
-              <input class="input" type="text" name="name" placeholder="Name" required />
-              <input class="input" type="email" name="email" placeholder="Email" required />
-              <textarea class="input" name="message" placeholder="Your message…" rows="4" required></textarea>
-            </div>
-            <button class="btn btn-primary mt-4" type="submit">Send</button>
-            <p id="formStatus" class="mt-2 text-sm text-slate-500 hidden">Thanks! Your message has been prepared in your email client.</p>
-          </form>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="py-10 border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
-      <p>© <span id="year"></span> Lukas William Djendrawan</p>
-      <div class="flex items-center gap-4">
-        <a href="https://letshelp2gether.com/" target="_blank" rel="noopener">Let's Help 2Gether</a>
-        <a href="https://cms-maspion.dbi-project.my.id" target="_blank" rel="noopener">Maspion CMS</a>
-        <a href="https://cms.dbi-project.my.id/" target="_blank" rel="noopener">DBI CMS</a>
+    <footer class="py-10 border-t border-slate-200">
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2"
+      >
+        <p>© <span id="year"></span> Lukas William Djendrawan</p>
+        <div class="flex items-center gap-4"></div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
